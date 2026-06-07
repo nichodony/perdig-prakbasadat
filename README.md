@@ -147,7 +147,7 @@ perdig/
 
 ## 📸 Screenshots
 
-> *(Tambahkan screenshot tampilan aplikasi di sini)*
+<img width="1896" height="871" alt="image" src="https://github.com/user-attachments/assets/64cfdbe2-2697-4078-80b5-ac3bc20e2d2c" />
 
 ---
 
