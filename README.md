@@ -127,7 +127,7 @@ perdig/
 
 | Role  | Username | Password |
 |-------|----------|----------|
-| Admin | `admin`  | *(lihat database)* |
+| Admin | `admin`  | 123 |
 | User  | *(registrasi baru)* | — |
 
 ---
