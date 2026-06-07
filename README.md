@@ -123,7 +123,6 @@ perdig/
 
 ## 🔐 Akun Default
 
-> Sesuaikan dengan data yang ada di tabel `user` hasil import SQL.
 
 | Role  | Username | Password |
 |-------|----------|----------|
