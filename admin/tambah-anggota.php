@@ -6,6 +6,8 @@ if(isset($_POST['submit'])){
     $nama     = $_POST['nama'];
     $username = $_POST['username'];
     $email    = $_POST['email'];
+    $no_hp = $_POST['no_hp'];
+    $alamat = $_POST['alamat'];
     $password = md5($_POST['password']);
     $role     = $_POST['role'];
 
@@ -14,13 +16,18 @@ if(isset($_POST['submit'])){
         nama,
         username,
         email,
+        no_hp,
+        alamat,
         password,
-        role
+        role,
+        
     )
     VALUES(
         '$nama',
         '$username',
         '$email',
+        '$no_hp',
+        '$alamat',
         '$password',
         '$role'
     )
@@ -162,6 +169,22 @@ href="../style.css">
                 </div>
 
                 <div class="form-group">
+                    <label>No HP</label>
+                    <input
+                    type="text"
+                    name="no_hp"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label>Alamat</label>
+                    <input
+                    type="text"
+                    name="alamat"
+                    required>
+                </div>
+
+                <div class="form-group">
                     <label>Password</label>
                     <input
                     type="password"
@@ -177,7 +200,7 @@ href="../style.css">
                     required>
 
                         <option value="">
-                            -- Pilih Role --
+                            Pilih Role
                         </option>
 
                         <option value="admin">
