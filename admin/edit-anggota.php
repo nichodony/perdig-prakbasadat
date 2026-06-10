@@ -15,7 +15,9 @@ if(isset($_POST['submit'])){
     $nama     = $_POST['nama'];
     $username = $_POST['username'];
     $email    = $_POST['email'];
-    $role     = $_POST['role'];
+    $no_hp = $_POST['no_hp'];
+    $alamat = $_POST['alamat'];
+    $role     = $_POST['role'];;
 
     mysqli_query($koneksi,"
     UPDATE user SET
@@ -23,6 +25,8 @@ if(isset($_POST['submit'])){
         nama='$nama',
         username='$username',
         email='$email',
+        no_hp='$no_hp',
+        alamat='$alamat',
         role='$role'
 
     WHERE id_user='$id'
@@ -169,6 +173,30 @@ href="../style.css">
                     type="email"
                     name="email"
                     value="<?= $data['email']; ?>"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>No HP</label>
+
+                    <input
+                    type="text"
+                    name="no_hp"
+                    value="<?= $data['no_hp']; ?>"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Alamat</label>
+
+                    <input
+                    type="text"
+                    name="alamat"
+                    value="<?= $data['alamat']; ?>"
                     required>
 
                 </div>
